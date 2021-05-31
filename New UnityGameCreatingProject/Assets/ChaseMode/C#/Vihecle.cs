@@ -20,9 +20,9 @@ public class Vihecle : MonoBehaviour
 
     public float BoostTank; //ブースト残量
 
-    bool BoostReady;
-    bool BoostMode;
-    bool DriftMode;
+    public bool BoostReady;
+    public bool BoostMode;
+    public bool DriftMode;
 
     /// <summary>
     /// 加速を行う関数
