@@ -69,7 +69,7 @@ public class EngineSound : MonoBehaviour
                 HitSECheck = false;
             }
         }
-        else if (VihecleObj.throttle != 0)
+        else if (VihecleObj.speed > 0.3f)
         {
             if (audioSource.isPlaying && HitSECheck)
             {
