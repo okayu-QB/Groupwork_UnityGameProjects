@@ -10,6 +10,18 @@ public class Enemy : MonoBehaviour
         Chase
     }
 
+    private EnemyState state;
+
+
+    //パトカーの状態変更メソッド
+    public void SetState(EnemyState tempState, Transform targetObj = null)
+    {
+        if(tempState == EnemyState.Patrol)
+        {
+            state = tempState;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

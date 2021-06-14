@@ -246,3 +246,12 @@ System memory in use after: 72.3 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1778.
 Total: 1.893500 ms (FindLiveObjects: 0.224000 ms CreateObjectMapping: 0.056400 ms MarkObjects: 1.464600 ms  DeleteObjects: 0.147000 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 2468.482767 seconds.
+  path: Assets/Enemy/SearchPlayer.cs
+  artifactKey: Guid(bc683f9e5960da84f8bfbe3458152848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/SearchPlayer.cs using Guid(bc683f9e5960da84f8bfbe3458152848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3fc0e40066a82ee6b139b7a5f21f3f') in 0.095467 seconds
+  Import took 0.157673 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
