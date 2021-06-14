@@ -198,3 +198,51 @@ System memory in use after: 72.2 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1771.
 Total: 2.042300 ms (FindLiveObjects: 0.227400 ms CreateObjectMapping: 0.040300 ms MarkObjects: 1.630800 ms  DeleteObjects: 0.142500 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1230 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.2 MB.
+System memory in use after: 72.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1774.
+Total: 2.492000 ms (FindLiveObjects: 0.181800 ms CreateObjectMapping: 0.082900 ms MarkObjects: 2.082100 ms  DeleteObjects: 0.144100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 845.080663 seconds.
+  path: Assets/Enemy/SearchPlayer.cs
+  artifactKey: Guid(bc683f9e5960da84f8bfbe3458152848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/SearchPlayer.cs using Guid(bc683f9e5960da84f8bfbe3458152848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3593dd02ffcfd7a530bd1560229a2a0') in 0.037358 seconds
+  Import took 0.071349 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001475 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.958 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.2 MB.
+System memory in use after: 72.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1778.
+Total: 1.893500 ms (FindLiveObjects: 0.224000 ms CreateObjectMapping: 0.056400 ms MarkObjects: 1.464600 ms  DeleteObjects: 0.147000 ms)
+
