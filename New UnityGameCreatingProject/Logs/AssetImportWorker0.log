@@ -15,11 +15,11 @@ D:/UnityGameCreatingProjects/New UnityGameCreatingProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60890
+58478
 Successfully changed project path to: D:/UnityGameCreatingProjects/New UnityGameCreatingProject
 D:/UnityGameCreatingProjects/New UnityGameCreatingProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 26.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,158 +35,266 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001857 seconds.
+Registered in 0.001688 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.01 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 27.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.959 seconds
+- Completed reload, in  0.889 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 Registered in 0.000626 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.767 seconds
+- Completed reload, in  0.691 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1273 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.9 MB.
+System memory in use before: 86.0 MB.
 System memory in use after: 86.0 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1737.
-Total: 2.809100 ms (FindLiveObjects: 0.334900 ms CreateObjectMapping: 0.035300 ms MarkObjects: 2.276600 ms  DeleteObjects: 0.160200 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1738.
+Total: 1.623100 ms (FindLiveObjects: 0.149900 ms CreateObjectMapping: 0.029000 ms MarkObjects: 1.324200 ms  DeleteObjects: 0.119100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/MIniMap
-  artifactKey: Guid(02155eee4c23fe142a078a0e42815207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MIniMap using Guid(02155eee4c23fe142a078a0e42815207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090d73f94e19822cf29422642230f520') in 0.009187 seconds
-  Import took 0.030100 seconds .
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/grid.psd
+  artifactKey: Guid(0f6377872e339455d9912675771556d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/grid.psd using Guid(0f6377872e339455d9912675771556d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404919f35872ef1a3fd3eb2c085230c3') in 0.051112 seconds
+  Import took 0.053028 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.089179 seconds.
-  path: Assets/Scripts/MIniMap
-  artifactKey: Guid(02155eee4c23fe142a078a0e42815207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MIniMap using Guid(02155eee4c23fe142a078a0e42815207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090d73f94e19822cf29422642230f520') in 0.001553 seconds
-  Import took 0.023356 seconds .
+  Time since last request: 0.374514 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Shaders/Projector Multiply.shader
+  artifactKey: Guid(ac96f5c0b697340a887ac2bd77a0bddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Shaders/Projector Multiply.shader using Guid(ac96f5c0b697340a887ac2bd77a0bddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ade4d28875a15292bc4a7923892273') in 0.008521 seconds
+  Import took 0.031711 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.839525 seconds.
-  path: Assets/Scripts/MIniMap/MiniMapMask.png
-  artifactKey: Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MIniMap/MiniMapMask.png using Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9396d30fe32f31376a95b7d768c0a0') in 0.081803 seconds
-  Import took 0.084251 seconds .
+  Time since last request: 1.302239 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Shaders/Projector Light.shader
+  artifactKey: Guid(ab70c098a52a04be88096d20e1540cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Shaders/Projector Light.shader using Guid(ab70c098a52a04be88096d20e1540cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eabd19f2eee01ff0fedc3d7b719aded9') in 0.005383 seconds
+  Import took 0.013956 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Scripts/MIniMap/MiniMapWindow.png
-  artifactKey: Guid(0858e268afc4c244cb10e2182c9c38b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MIniMap/MiniMapWindow.png using Guid(0858e268afc4c244cb10e2182c9c38b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40369e124273c52bea67a926102bf051') in 0.008795 seconds
-  Import took 0.020184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 120.667780 seconds.
-  path: Assets/MIniMap/New Render Texture.renderTexture
-  artifactKey: Guid(069707298a7b54b469519a837ff4cafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MIniMap/New Render Texture.renderTexture using Guid(069707298a7b54b469519a837ff4cafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd909016e3842b6896bd8d3b44c72135d') in 0.029326 seconds
-  Import took 0.041469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.704090 seconds.
-  path: Assets/MIniMap/MiniMap.renderTexture
-  artifactKey: Guid(069707298a7b54b469519a837ff4cafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MIniMap/MiniMap.renderTexture using Guid(069707298a7b54b469519a837ff4cafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9f524e5f6f7ed54c0d6f87819279d5') in 0.009567 seconds
-  Import took 0.016501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.037232 seconds.
-  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Grid Material.mat
-  artifactKey: Guid(52a1cf6eec0cc4f64bd6dfc9a3e8fe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Grid Material.mat using Guid(52a1cf6eec0cc4f64bd6dfc9a3e8fe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58b5c897796005a0eb95b27b18f8606') in 0.111995 seconds
-  Import took 0.124557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Light Material.mat
-  artifactKey: Guid(a9cdb98423c19412bbac43b1fb623c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Light Material.mat using Guid(a9cdb98423c19412bbac43b1fb623c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61948abfead83e293ea7463a03e12557') in 0.098496 seconds
-  Import took 0.110701 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.059155 seconds.
-  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Shadow Material.mat
-  artifactKey: Guid(78c0a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Shadow Material.mat using Guid(78c0a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46fc6a7ea1a6e350502a3517477e482') in 0.073808 seconds
-  Import took 0.107664 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 155.621833 seconds.
-  path: Assets/MIniMap/MiniMapMask.png
-  artifactKey: Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MIniMap/MiniMapMask.png using Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4beecba3ade5f82bab7b509209b302e6') in 0.009460 seconds
-  Import took 0.026152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.993942 seconds.
-  path: Assets/MIniMap/New Material.mat
-  artifactKey: Guid(f6a4529f7335ec341b1240072bfa27aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MIniMap/New Material.mat using Guid(f6a4529f7335ec341b1240072bfa27aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8d9c06d2495902b9c1b773ba9f8b03') in 0.011593 seconds
-  Import took 0.024945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 102.226571 seconds.
-  path: Assets/MIniMap/MiniMapMask.png
-  artifactKey: Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MIniMap/MiniMapMask.png using Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0899f23e156541bcb3b970b2233706dc') in 0.020029 seconds
-  Import took 0.031723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 137.493292 seconds.
+  Time since last request: 0.054585 seconds.
   path: Assets/MIniMap/MiniMapWindow.png
   artifactKey: Guid(0858e268afc4c244cb10e2182c9c38b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MIniMap/MiniMapWindow.png using Guid(0858e268afc4c244cb10e2182c9c38b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13b39ef9e05a6233c44564fdef98365') in 0.012813 seconds
-  Import took 0.030339 seconds .
+Start importing Assets/MIniMap/MiniMapWindow.png using Guid(0858e268afc4c244cb10e2182c9c38b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99b3ed45be5782e9fe7a14f733b2a59') in 0.062100 seconds
+  Import took 0.121017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034407 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/Light.psd
+  artifactKey: Guid(ebeafa2f107dd41c2b474fb590ff5080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/Light.psd using Guid(ebeafa2f107dd41c2b474fb590ff5080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edb9b4920e974f73b9a63f0cc87fcf5') in 0.009451 seconds
+  Import took 0.011795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.696870 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Blob Shadow Projector.prefab
+  artifactKey: Guid(1880a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Blob Shadow Projector.prefab using Guid(1880a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c15f30a9359017eb5ab5f0ef06f7733') in 0.015943 seconds
+  Import took 0.018092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.838897 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Light Material.mat
+  artifactKey: Guid(a9cdb98423c19412bbac43b1fb623c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Light Material.mat using Guid(a9cdb98423c19412bbac43b1fb623c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61948abfead83e293ea7463a03e12557') in 0.034610 seconds
+  Import took 0.036853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.730014 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/Falloff.psd
+  artifactKey: Guid(cc90a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/Falloff.psd using Guid(cc90a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0ef37b2d9ffc2614f9471664f26acb') in 0.007744 seconds
+  Import took 0.024515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.215103 seconds.
+  path: Assets/MIniMap/MiniMap.renderTexture
+  artifactKey: Guid(069707298a7b54b469519a837ff4cafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MIniMap/MiniMap.renderTexture using Guid(069707298a7b54b469519a837ff4cafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a388c7d14b70ea6ac2b8b7261e03b1c3') in 0.010394 seconds
+  Import took 0.034105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.568091 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Grid Projector.prefab
+  artifactKey: Guid(a29e133e3841243b7b0ec432e3573cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Grid Projector.prefab using Guid(a29e133e3841243b7b0ec432e3573cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb19949f4ea8de3b37a626bc5ff5102') in 0.006502 seconds
+  Import took 0.021292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032733 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors
+  artifactKey: Guid(ab90c5d984b4d4e9e935ae8760fd47ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors using Guid(ab90c5d984b4d4e9e935ae8760fd47ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2bdf7759bd22f2f9a19d1427e86cf6') in 0.004687 seconds
+  Import took 0.010802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071269 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials
+  artifactKey: Guid(92722830d4a3f49e5bf7e68441337edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials using Guid(92722830d4a3f49e5bf7e68441337edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332211d74cca9ccd473577c002b6950e') in 0.005200 seconds
+  Import took 0.007609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.050643 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Shaders
+  artifactKey: Guid(0d64cf85603324c6d89204084bbb3438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Shaders using Guid(0d64cf85603324c6d89204084bbb3438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b8e5e4706cda9565ad6b9450675587') in 0.005522 seconds
+  Import took 0.015984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.516114 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources
+  artifactKey: Guid(8668f96cc207b4965afadab0edade16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources using Guid(8668f96cc207b4965afadab0edade16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9c574f4337b6c9e0989adaa3ac04f8') in 0.005724 seconds
+  Import took 0.039691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.485127 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures
+  artifactKey: Guid(24f8b7f726c7047cb906be889dbf5ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures using Guid(24f8b7f726c7047cb906be889dbf5ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6775849b5a33522576c745133ac87757') in 0.004919 seconds
+  Import took 0.045183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.280547 seconds.
+  path: Assets/Scenes/ChaseGameMode.unity
+  artifactKey: Guid(ea82b8ac600809b46bc7c6458e8aadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ChaseGameMode.unity using Guid(ea82b8ac600809b46bc7c6458e8aadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef507db743645670183a846097c4c7c1') in 0.006054 seconds
+  Import took 0.017396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144093 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets
+  artifactKey: Guid(3cf69b7e76da34da9874c1ff8a644bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets using Guid(3cf69b7e76da34da9874c1ff8a644bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7dc70e70c2d486acdfe83f45acd21b') in 0.004645 seconds
+  Import took 0.007082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.234063 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Shadow Material.mat
+  artifactKey: Guid(78c0a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Shadow Material.mat using Guid(78c0a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46fc6a7ea1a6e350502a3517477e482') in 0.010654 seconds
+  Import took 0.012867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011737 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/Shadow.psd
+  artifactKey: Guid(0eb0a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Textures/Shadow.psd using Guid(0eb0a732ad112a541100162a44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9570ca2fa1ce91cda2f124445699e302') in 0.018676 seconds
+  Import took 0.056017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140632 seconds.
+  path: Assets/MIniMap
+  artifactKey: Guid(02155eee4c23fe142a078a0e42815207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MIniMap using Guid(02155eee4c23fe142a078a0e42815207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562ad45b901869fa7d505afc2590e99f') in 0.004917 seconds
+  Import took 0.023658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.490136 seconds.
+  path: Assets/MIniMap/MiniMapMask.png
+  artifactKey: Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MIniMap/MiniMapMask.png using Guid(42cd94ee15fccb34ea037cc1be5619db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef0a55cb57f8312608a949bfec39e2d') in 0.009998 seconds
+  Import took 0.017820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.237809 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Guidelines.txt
+  artifactKey: Guid(d5d58c10e934a4738aa90eb4e904a166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Guidelines.txt using Guid(d5d58c10e934a4738aa90eb4e904a166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0135ef0da05f8217422169e2c1fc9255') in 0.008159 seconds
+  Import took 0.016410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.970778 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Blob Light Projector.prefab
+  artifactKey: Guid(b0a1f6772f39e47fdae4d55c17d8ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Blob Light Projector.prefab using Guid(b0a1f6772f39e47fdae4d55c17d8ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4477696b3b8838f41d658ed5bc942b8b') in 0.005538 seconds
+  Import took 0.027523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.330747 seconds.
+  path: Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Grid Material.mat
+  artifactKey: Guid(52a1cf6eec0cc4f64bd6dfc9a3e8fe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3DModels/ZRNAssets/Standard Assets/Projectors/Sources/Materials/Grid Material.mat using Guid(52a1cf6eec0cc4f64bd6dfc9a3e8fe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58b5c897796005a0eb95b27b18f8606') in 0.010122 seconds
+  Import took 0.012421 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000621 seconds.
+Registered in 0.000642 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.660 seconds
+- Completed reload, in  0.638 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1228 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.3 MB.
 System memory in use after: 85.4 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1784.
-Total: 1.587700 ms (FindLiveObjects: 0.140400 ms CreateObjectMapping: 0.029500 ms MarkObjects: 1.405300 ms  DeleteObjects: 0.011600 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1787.
+Total: 1.509100 ms (FindLiveObjects: 0.130900 ms CreateObjectMapping: 0.028700 ms MarkObjects: 1.337200 ms  DeleteObjects: 0.011400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000628 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.640 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1228 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.4 MB.
+System memory in use after: 85.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1790.
+Total: 1.613400 ms (FindLiveObjects: 0.169700 ms CreateObjectMapping: 0.029200 ms MarkObjects: 1.400400 ms  DeleteObjects: 0.013300 ms)
 
