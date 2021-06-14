@@ -23,7 +23,7 @@ public class SearchPlayer : MonoBehaviour
             if(state != Enemy.EnemyState.Chase)
             {
                 Debug.Log("Find Enemy");
-                moveEnemy.Set
+                Enemy.SetState(Enemy.EnemyState.Chase, other.transform);
             }
         }
     }
