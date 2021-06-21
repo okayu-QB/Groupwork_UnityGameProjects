@@ -137,6 +137,8 @@ public class Vihecle : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(FrontHitObj.FrontHit);
+
         BoostCheck();
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) && BoostReady == true)
         {

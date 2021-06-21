@@ -6,13 +6,10 @@ public class VihecleHit : MonoBehaviour
 {
     public bool FrontHit;
     
-    void OnTriggerEnter(Collider collection)
+    void OnCollisionEnter(Collision collection)
     {
-        if (collection.gameObject.tag != "BoostItem")
-        {
-            Debug.Log("FrontHit");
-            FrontHit = true;
-        }
+        Debug.Log("FrontHit");
+        FrontHit = true;
     }
 
     // Start is called before the first frame update
