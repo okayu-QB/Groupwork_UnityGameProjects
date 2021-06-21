@@ -17,6 +17,7 @@ public class Vihecle : MonoBehaviour
     public float Deceleration; //減速
     public float MaxBoost; //ブースト時速度
     public VihecleHit FrontHitObj; //当たり判定確認用オブジェクト
+    public bool hit;
 
     public float BoostTank; //ブースト残量
 
@@ -77,7 +78,7 @@ public class Vihecle : MonoBehaviour
     private void HitVihecle()
     {
         throttle = 0;
-        FrontHitObj.FrontHit = false;
+        FrontHitObj.Hit = false;
     }
 
     /// <summary>
@@ -137,6 +138,8 @@ public class Vihecle : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Debug.Log(FrontHitObj.FrontHit);
+
         BoostCheck();
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) && BoostReady == true)
         {
@@ -150,16 +153,20 @@ public class Vihecle : MonoBehaviour
         {
             Accel();
         }
+        else if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && throttle > 0)
+        {
+            Decel();
+        }
 
         if (Input.GetKey(KeyCode.S))
         {
             Decel();
         }
 
-        if (FrontHitObj.FrontHit == true)
-        {
-            HitVihecle();
-        }
+        //if (FrontHitObj.FrontHit == true)
+        //{
+        //    HitVihecle();
+        //}
         VihecleSpeed();
 
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Space))

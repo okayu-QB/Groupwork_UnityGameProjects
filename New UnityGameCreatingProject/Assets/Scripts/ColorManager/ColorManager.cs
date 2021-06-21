@@ -24,9 +24,9 @@ public class ColorManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("R : " + redCount);
-        Debug.Log("G : " +  greenCount);
-        Debug.Log("B : " + blueCount);
+        //Debug.Log("R : " + redCount);
+        //Debug.Log("G : " +  greenCount);
+        //Debug.Log("B : " + blueCount);
 
     }
     
