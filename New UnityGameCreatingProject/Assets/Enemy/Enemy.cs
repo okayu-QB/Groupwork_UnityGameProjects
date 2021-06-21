@@ -81,11 +81,10 @@ public class Enemy : MonoBehaviour
             //@‘Ò‚¿ŽžŠÔ‚ð‰z‚¦‚½‚çŽŸ‚Ì–Ú“I’n‚ðÝ’è
             if (elapsedTime > waitTime)
             {
-                SetState(EnemyState.Walk);
+                //SetState(EnemyState.Walk);
             }
         }
         velocity.y += Physics.gravity.y * Time.deltaTime;
-        enemyController.Move(velocity * Time.deltaTime);
-    }
+        //enemyController.Move(velocity * Time.deltaTime);
     }
 }
