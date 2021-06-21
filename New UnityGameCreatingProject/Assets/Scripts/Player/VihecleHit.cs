@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class VihecleHit : MonoBehaviour
 {
-    public bool FrontHit;
+    public bool Hit;
     
-    void OnTriggerEnter(Collider collection)
+    void OnCollisionEnter(Collision collection)
     {
-        if (collection.gameObject.tag != "BoostItem")
-        {
-            Debug.Log("FrontHit");
-            FrontHit = true;
-        }
+        Hit = true;
     }
 
     // Start is called before the first frame update

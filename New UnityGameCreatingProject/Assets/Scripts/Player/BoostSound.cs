@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EngineSound : MonoBehaviour
+public class BoostSound : MonoBehaviour
 {
-    public AudioClip Engine;
+    public AudioClip Boost;
     public Vihecle VihecleObj;
     public VihecleHit VihecleHitObj;
     AudioSource audioSource;
@@ -18,12 +18,12 @@ public class EngineSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void SetAndPlaySE(AudioClip clip,bool loop)
+    private void SetAndPlaySE(AudioClip clip, bool loop)
     {
-        if(audioSource == null)
+        if (audioSource == null)
         {
             Debug.Log("AudioSouce Component is null");
             return;
@@ -48,7 +48,7 @@ public class EngineSound : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (VihecleObj.speed > 0.3f)
+        if (VihecleObj.BoostMode == true)
         {
             if (audioSource.isPlaying)
             {
@@ -56,7 +56,7 @@ public class EngineSound : MonoBehaviour
             }
             else
             {
-                SetAndPlaySE(Engine, true);
+                SetAndPlaySE(Boost, true);
             }
         }
         else
