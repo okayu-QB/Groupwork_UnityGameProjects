@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class VihecleHit : MonoBehaviour
 {
-    public bool FrontHit;
+    public bool Hit;
     
     void OnCollisionEnter(Collision collection)
     {
-        Debug.Log("FrontHit");
-        FrontHit = true;
+        Hit = true;
     }
 
     // Start is called before the first frame update
