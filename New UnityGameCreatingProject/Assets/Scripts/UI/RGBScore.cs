@@ -13,9 +13,9 @@ public class RGBScore : MonoBehaviour
     public Text blueScoreText;
 
     //スコア上限
-    public int redMax = 1;
-    public int greenMax = 1;
-    public int blueMax = 1;
+    public int redMax = 5;
+    public int greenMax = 5;
+    public int blueMax = 5;
 
     [SerializeField]
     private GameObject colorObject;
@@ -24,7 +24,7 @@ public class RGBScore : MonoBehaviour
     PostProcessVolume _postProcess;
     ColorGrading _colorGrading;
 
-    public GameObject caameraObject;
+    public GameObject cameraObject;
 
     //Color Grading の value用変数
     FloatParameter minimumParameter = new FloatParameter { value = 0 };
@@ -32,7 +32,7 @@ public class RGBScore : MonoBehaviour
 
 
     private void Start() {
-        colorManager = colorObject.GetComponent<ColorManager>();
+        colorManager = colorObject.GetComponent<ColorManager>();//カラーマネージャークラスのインスタンス化
 
         // PostProcessVolume にスタックされた Effect が格納された配列 PostProcessVolume.profile.settings から ColorGrading を探して参照
         _postProcess = GameObject.Find("PlayerCam").gameObject.GetComponent<PostProcessVolume>();
@@ -54,7 +54,7 @@ public class RGBScore : MonoBehaviour
         RgbScores();
 
         if(colorManager.redCount == redMax && colorManager.greenCount == greenMax && colorManager.blueCount == blueMax) {
-            //SceneManager.LoadScene("ClearSean");
+            SceneManager.LoadScene("ClearSean");
         }
         CameraColorGrade();
     }
