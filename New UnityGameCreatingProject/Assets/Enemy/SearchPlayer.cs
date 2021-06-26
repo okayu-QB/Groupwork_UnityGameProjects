@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class SearchPlayer : MonoBehaviour
 {
-    private Enemy Enemy;
+    [SerializeField]
+    private Enemy moveenemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        Enemy = GetComponentInParent<Enemy>();
+        
     }
 
     private void OnTriggerStay(Collider other)
@@ -18,13 +19,22 @@ public class SearchPlayer : MonoBehaviour
         if(other.tag == "Player")
         {
             //パトカーの状態を取得
-            //Enemy.EnemyState state = Enemy.GetState();
+            Enemy.EnemyState state = moveenemy.GetState();
             //パトカーがチェイス状態でなければ、チェイス状態に変更
-            //if(state != Enemy.EnemyState.Chase)
-            //{
-            //    Debug.Log("Find Enemy");
-            //    Enemy.SetState(Enemy.EnemyState.Chase, other.transform);
-            //}
+            if (state != Enemy.EnemyState.Chase)
+            {
+                Debug.Log("Find Enemy");
+                moveenemy.SetState(Enemy.EnemyState.Chase, other.transform);
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.tag == "Player")
+        {
+            Debug.Log("見失う");
+            moveenemy.SetState(Enemy.EnemyState.Patrol);
         }
     }
 

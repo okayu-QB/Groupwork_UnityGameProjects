@@ -14,8 +14,8 @@ public class SetPosition : MonoBehaviour
 	//WayPointListの要素数
 	private int elements;
 	//目的地の座標
-	private float DestinationX;
-	private float DestinationZ;
+	public float DestinationX;
+	public float DestinationZ;
 
 	// Start is called before the first frame update
 	void Start()
@@ -32,16 +32,24 @@ public class SetPosition : MonoBehaviour
     }
 
 	//目的地のWayPointをランダムに設定
-	public void RandomSetWayPoint()
+	public void RandomSetWayPoint(List<Transform> list)
 	{
-		elements = WayPointObj.WayPointList.Count;
+		elements = list.Count;
 		//ランダムに0～3の間の整数を取る
-		int index = Random.Range(0, elements);
-		DestinationX = WayPointObj.WayPointList[index].position.x;
-		DestinationZ = WayPointObj.WayPointList[index].position.z;
+		int index = (int)(Time.realtimeSinceStartup % list.Count);
+		Debug.Log("SetRange:" + index);
+		DestinationX = list[index].position.x;
+		DestinationZ = list[index].position.z;
 		//現在地に次の目的地を設定
-		SetDestination(startPosition + new Vector3(DestinationX, 0, DestinationZ));
+		Debug.Log("x:" + DestinationX + " z:" + DestinationZ);
+		SetDestination(new Vector3(DestinationX, 0, DestinationZ));
     }
+
+    //目的地を変更する
+    //public void ChangeDestination(WayPoint wayPoint)
+    //{
+    //    WayPointObj = wayPoint;
+    //}
 
     //　目的地を設定する
     public void SetDestination(Vector3 position)
