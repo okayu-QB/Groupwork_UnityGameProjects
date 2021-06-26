@@ -9,11 +9,18 @@ public class SetPosition : MonoBehaviour
 	private Vector3 startPosition;
 	//目的地
 	private Vector3 destination;
+	//WayPointのリスト
+	public WayPoint WayPointObj;
+	//WayPointListの要素数
+	private int elements;
+	//目的地の座標
+	private float DestinationX;
+	private float DestinationZ;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		//　初期位置を設定
+		//　初期位置を設定(コレのせいで巡回がおかしくなる可能性アリ)
 		startPosition = transform.position;
 		SetDestination(transform.position);
 	}
@@ -24,17 +31,20 @@ public class SetPosition : MonoBehaviour
         
     }
 
-	//　ランダムな位置の作成
-	//public void CreateRandomPosition()
-	//{
-	//	//　ランダムなVector2の値を得る
-	//	var randDestination = Random.insideUnitCircle * 8;
-	//	//　現在地にランダムな位置を足して目的地とする
-	//	SetDestination(startPosition + new Vector3(randDestination.x, 0, randDestination.y));
-	//}
+	//目的地のWayPointをランダムに設定
+	public void RandomSetWayPoint()
+	{
+		elements = WayPointObj.WayPointList.Count;
+		//ランダムに0～3の間の整数を取る
+		int index = Random.Range(0, elements);
+		DestinationX = WayPointObj.WayPointList[index].position.x;
+		DestinationZ = WayPointObj.WayPointList[index].position.z;
+		//現在地に次の目的地を設定
+		SetDestination(startPosition + new Vector3(DestinationX, 0, DestinationZ));
+    }
 
-	//　目的地を設定する
-	public void SetDestination(Vector3 position)
+    //　目的地を設定する
+    public void SetDestination(Vector3 position)
 	{
 		destination = position;
 	}

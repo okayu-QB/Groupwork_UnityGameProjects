@@ -61,10 +61,14 @@ public class Enemy : MonoBehaviour
             if(state == EnemyState.Chase)
             {
                 setPosition.SetDestination(playerTransform.position);
-                direction = (setPosition.GetDestination() - transform.position).normalized;
-                transform.LookAt(new Vector3(setPosition.GetDestination().x, transform.position.y, setPosition.GetDestination().z));
-                velocity = direction * speed;
             }
+            else
+            {
+                setPosition.RandomSetWayPoint();
+            }
+            direction = (setPosition.GetDestination() - transform.position).normalized;
+            transform.LookAt(new Vector3(setPosition.GetDestination().x, transform.position.y, setPosition.GetDestination().z));
+            velocity = direction * speed;
 
             //　目的地に到着したかどうかの判定
             if (Vector3.Distance(transform.position, setPosition.GetDestination()) < 0.5f)
@@ -72,8 +76,8 @@ public class Enemy : MonoBehaviour
                 SetState(EnemyState.Wait);
                 //animator.SetFloat("Speed", 0.0f);
             }
-            //　到着していたら一定時間待つ
         }
+        //　到着していたら一定時間待つ
         else if (state == EnemyState.Wait)
         {
             elapsedTime += Time.deltaTime;
@@ -81,7 +85,7 @@ public class Enemy : MonoBehaviour
             //　待ち時間を越えたら次の目的地を設定
             if (elapsedTime > waitTime)
             {
-                //SetState(EnemyState.Walk);
+                SetState(EnemyState.Patrol);
             }
         }
         velocity.y += Physics.gravity.y * Time.deltaTime;
