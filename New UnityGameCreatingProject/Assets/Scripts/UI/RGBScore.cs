@@ -24,7 +24,8 @@ public class RGBScore : MonoBehaviour
     PostProcessVolume _postProcess;
     ColorGrading _colorGrading;
 
-    public GameObject cameraObject;
+    //public GameObject cameraObject;
+    
 
     //Color Grading の value用変数
     FloatParameter minimumParameter = new FloatParameter { value = 0 };
@@ -33,6 +34,10 @@ public class RGBScore : MonoBehaviour
 
     private void Start() {
         colorManager = colorObject.GetComponent<ColorManager>();//カラーマネージャークラスのインスタンス化
+
+        colorManager.redCount = 0;
+        colorManager.greenCount = 0;
+        colorManager.blueCount = 0;
 
         // PostProcessVolume にスタックされた Effect が格納された配列 PostProcessVolume.profile.settings から ColorGrading を探して参照
         _postProcess = GameObject.Find("PlayerCam").gameObject.GetComponent<PostProcessVolume>();
