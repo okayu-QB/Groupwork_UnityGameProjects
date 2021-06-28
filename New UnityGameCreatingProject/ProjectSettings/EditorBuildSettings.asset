@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChaseGameMode.unity
     guid: ea82b8ac600809b46bc7c6458e8aadb5
+  - enabled: 1
+    path: Assets/Scenes/ClearSean.unity
+    guid: 08e90738f92311441920a5601ed5c869
   m_configObjects: {}

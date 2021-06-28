@@ -10,16 +10,18 @@ public class ColorManager : MonoBehaviour
     //public Collider collorG;
     //public Collider collorB;
 
-    public int redCount = 0;
-    public int greenCount = 0;
-    public int blueCount=0;
+    public int redCount;
+    public int greenCount;
+    public int blueCount;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+       //redCount = 0;
+       //greenCount = 0;
+       //blueCount = 0;
+}
 
     // Update is called once per frame
     void Update()
