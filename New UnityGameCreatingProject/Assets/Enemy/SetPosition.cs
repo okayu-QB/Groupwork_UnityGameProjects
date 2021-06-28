@@ -9,13 +9,16 @@ public class SetPosition : MonoBehaviour
 	private Vector3 startPosition;
 	//目的地
 	private Vector3 destination;
-	//WayPointのリスト
-	public WayPoint WayPointObj;
 	//WayPointListの要素数
 	private int elements;
 	//目的地の座標
 	public float DestinationX;
 	public float DestinationZ;
+	//WayPointManagerのゲームオブジェクト
+	public WayPointManager WayPointManagerObj;
+
+	[SerializeField]
+	private GameObject NearrestWayPoint;
 
 	// Start is called before the first frame update
 	void Start()
@@ -29,6 +32,15 @@ public class SetPosition : MonoBehaviour
     void Update()
     {
         
+    }
+
+	//Enemyから一番近いWayPointを目的地に設定
+	public void SetNearestWayPoint()
+    {
+		for(int i = 0;i < WayPointManagerObj.childrencount; i++)
+        {
+
+        }
     }
 
 	//目的地のWayPointをランダムに設定
