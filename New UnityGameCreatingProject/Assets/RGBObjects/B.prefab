@@ -109,4 +109,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 1
-  colorObject: {fileID: 0}
+  colorObject: {fileID: 4067285281776498674, guid: aaa645ec7e5e5734ab969d617c1c8e37, type: 3}
