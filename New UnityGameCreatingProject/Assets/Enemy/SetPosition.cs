@@ -8,6 +8,7 @@ public class SetPosition : MonoBehaviour
 	//初期位置
 	private Vector3 startPosition;
 	//目的地
+	[SerializeField]
 	private Vector3 destination;
 	//WayPointListの要素数
 	private int elements;
@@ -37,10 +38,24 @@ public class SetPosition : MonoBehaviour
 	//Enemyから一番近いWayPointを目的地に設定
 	public void SetNearestWayPoint()
     {
+	    float tmpDis = 0;
+		float nearDis = 0;
+		GameObject cmpObj;
+
 		for(int i = 0;i < WayPointManagerObj.childrencount; i++)
         {
+			cmpObj = WayPointManagerObj.AllWayPointList[i];
+			tmpDis = Vector3.Distance(transform.position, cmpObj.transform.position);
 
+			if(nearDis == 0 || nearDis > tmpDis)
+            {
+				nearDis = tmpDis;
+				NearrestWayPoint = cmpObj;
+				Debug.Log("NearestPoint is " + NearrestWayPoint);
+            }
         }
+
+		SetDestination(NearrestWayPoint.transform.position);
     }
 
 	//目的地のWayPointをランダムに設定
@@ -49,11 +64,11 @@ public class SetPosition : MonoBehaviour
 		elements = list.Count;
 		//ランダムに0～3の間の整数を取る
 		int index = (int)(Time.realtimeSinceStartup % list.Count);
-		Debug.Log("SetRange:" + index);
+		//Debug.Log("SetRange:" + index);
 		DestinationX = list[index].position.x;
 		DestinationZ = list[index].position.z;
 		//現在地に次の目的地を設定
-		Debug.Log("x:" + DestinationX + " z:" + DestinationZ);
+		//Debug.Log("x:" + DestinationX + " z:" + DestinationZ);
 		SetDestination(new Vector3(DestinationX, 0, DestinationZ));
     }
 

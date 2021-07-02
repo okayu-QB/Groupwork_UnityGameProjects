@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     //パトカーの移動速度
     public float speed;
     //目的地
+    [SerializeField]
     private Vector3 destination;
     //パトカーの速さ
     //private Vector3 velocity;
@@ -38,6 +39,8 @@ public class Enemy : MonoBehaviour
     private Rigidbody rb;
     public Rigidbody Rigid { get { return rb; } }
 
+    public bool LostEnemy;
+
     //パトカーの状態変更メソッド
     public void SetState(EnemyState tempState, Transform targetObj = null)
     {
@@ -55,12 +58,13 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("wait");
         }
+        Debug.Log("State has changed to" + tempState);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        setPosition.SetDestination(new Vector3(34.74f, 0, 39.34f));
+        setPosition.SetDestination(new Vector3(22.12f, 0, 44.59f));
         rb.velocity = Vector3.zero;
         arrived = false;
         elapsedTime = 0f;
@@ -82,10 +86,10 @@ public class Enemy : MonoBehaviour
             {
                 setPosition.SetDestination(playerTransform.position);
             }
-            else if(state == EnemyState.Patrol && arrived == true)
+            else if(state == EnemyState.Patrol && LostEnemy == true)
             {
-                //setPosition.RandomSetWayPoint();
-                arrived = false;
+                setPosition.SetNearestWayPoint();
+                LostEnemy = false;
             }
             direction = (setPosition.GetDestination() - transform.position).normalized;
             transform.LookAt(new Vector3(setPosition.GetDestination().x, transform.position.y, setPosition.GetDestination().z));

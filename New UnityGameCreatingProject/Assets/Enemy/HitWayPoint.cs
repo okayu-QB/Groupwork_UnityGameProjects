@@ -9,7 +9,7 @@ public class HitWayPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        //Debug.Log("Through Point A");
+        Debug.Log("Through Point A");
         if (collision.gameObject.tag == "Enemy")
         {
             Police = collision.gameObject.GetComponent<Enemy>();
