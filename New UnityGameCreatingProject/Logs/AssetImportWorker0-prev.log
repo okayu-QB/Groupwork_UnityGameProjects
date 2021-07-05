@@ -15,11 +15,11 @@ C:/Users/okayu/Documents/GitHub/UnityGameCreatingProjects/New UnityGameCreatingP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58279
+64912
 Successfully changed project path to: C:/Users/okayu/Documents/GitHub/UnityGameCreatingProjects/New UnityGameCreatingProject
 C:/Users/okayu/Documents/GitHub/UnityGameCreatingProjects/New UnityGameCreatingProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 39.86 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 36.84 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path F:/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,107 +35,51 @@ Initialize mono
 Mono path[0] = 'F:/Unity/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001521 seconds.
+Registered in 0.001138 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.03 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.014 seconds
+- Completed reload, in  1.065 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000810 seconds.
+Registered in 0.001010 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.939 seconds
+- Completed reload, in  1.019 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1284 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 73.0 MB.
-System memory in use after: 73.1 MB.
+System memory in use after: 73.0 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1735.
-Total: 1.943100 ms (FindLiveObjects: 0.237600 ms CreateObjectMapping: 0.070900 ms MarkObjects: 1.475700 ms  DeleteObjects: 0.158000 ms)
+Total: 2.013000 ms (FindLiveObjects: 0.121400 ms CreateObjectMapping: 0.033700 ms MarkObjects: 1.708200 ms  DeleteObjects: 0.148700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Enemy/Gray.mat
-  artifactKey: Guid(f29d179d16f27e34ea5a164c6001ab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Gray.mat using Guid(f29d179d16f27e34ea5a164c6001ab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c76ffb34025204829a6c76cd10366b3') in 0.140898 seconds
-  Import took 0.143034 seconds .
+  path: Assets/Enemy/Enemy.cs
+  artifactKey: Guid(3709a6e66dfa6d64a8ec920f78db3057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Enemy.cs using Guid(3709a6e66dfa6d64a8ec920f78db3057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba3b109973ffd579bfb7db5404326b2') in 0.048371 seconds
+  Import took 0.050639 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b2b93008439856e93a4cf5c64d3bb6') in 0.054686 seconds
-  Import took 0.080229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001864 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b2b93008439856e93a4cf5c64d3bb6') in 0.034531 seconds
-  Import took 0.037382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 122.404284 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3290c06b9a38320fbfef7d0a178d8122') in 0.037604 seconds
-  Import took 0.041065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 372.224444 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d026539813ced9136003e71dd2630eb') in 0.040008 seconds
-  Import took 0.043679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.106266 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cdbdfcf16d66ddc8b707458ee52609') in 0.036521 seconds
-  Import took 0.039180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.966317 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb827eb938e3a6494f2c216e03d66901') in 0.032401 seconds
-  Import took 0.035124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.984262 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae7096dba4e7c199a5683079639d9cd') in 0.033716 seconds
-  Import took 0.036409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.963825 seconds.
-  path: Assets/Enemy/WayPoint.prefab
-  artifactKey: Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/WayPoint.prefab using Guid(fe13dda9658b6c544a70b85d03cb7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9eada00dd2ceb2e861660931d0ffed') in 0.032151 seconds
-  Import took 0.035141 seconds .
+  Time since last request: 18.262414 seconds.
+  path: Assets/Enemy/SetPosition.cs
+  artifactKey: Guid(d949dc9e13f014a448643f7de95d537f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/SetPosition.cs using Guid(d949dc9e13f014a448643f7de95d537f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcb57056468bd5182d93755570071b4') in 0.027855 seconds
+  Import took 0.030110 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
