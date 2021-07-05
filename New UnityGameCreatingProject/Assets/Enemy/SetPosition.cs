@@ -14,7 +14,6 @@ public class SetPosition : MonoBehaviour
 	private int elements;
 	//目的地の座標
 	public float DestinationX;
-	public float DestinationY;
 	public float DestinationZ;
 	//WayPointManagerのゲームオブジェクト
 	public WayPointManager WayPointManagerObj;
@@ -67,11 +66,10 @@ public class SetPosition : MonoBehaviour
 		int index = (int)(Time.realtimeSinceStartup % list.Count);
 		//Debug.Log("SetRange:" + index);
 		DestinationX = list[index].position.x;
-		DestinationY = list[index].position.y;
 		DestinationZ = list[index].position.z;
 		//現在地に次の目的地を設定
 		//Debug.Log("x:" + DestinationX + " z:" + DestinationZ);
-		SetDestination(new Vector3(DestinationX, DestinationY, DestinationZ));
+		SetDestination(new Vector3(DestinationX, 0, DestinationZ));
     }
 
     //目的地を変更する
