@@ -41,6 +41,9 @@ public class Enemy : MonoBehaviour
 
     public bool LostEnemy;
 
+    [SerializeField]
+    private Vector3 FirstDestination;
+
     //パトカーの状態変更メソッド
     public void SetState(EnemyState tempState, Transform targetObj = null)
     {
@@ -64,7 +67,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setPosition.SetDestination(new Vector3(22.12f, 0, 44.59f));
+        setPosition.SetDestination(FirstDestination);
         rb.velocity = Vector3.zero;
         arrived = false;
         elapsedTime = 0f;
