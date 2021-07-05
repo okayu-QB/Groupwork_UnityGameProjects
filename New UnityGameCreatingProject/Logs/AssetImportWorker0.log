@@ -98,3 +98,116 @@ Received Import Request.
 Start importing Assets/Scenes/ChaseGameMode.unity using Guid(ea82b8ac600809b46bc7c6458e8aadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da28597c0a8728cb65f1317efc877577') in 0.030997 seconds
   Import took 0.033664 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 133.893322 seconds.
+  path: Assets/Enemy/Enemy1.cs
+  artifactKey: Guid(acd5f56ad617a49458bb93f70586f691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Enemy1.cs using Guid(acd5f56ad617a49458bb93f70586f691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb264886f15c60c1c38866c98a7c1372') in 0.033574 seconds
+  Import took 0.036274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008569 seconds.
+  path: Assets/Enemy/Enemy1.cs
+  artifactKey: Guid(acd5f56ad617a49458bb93f70586f691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Enemy1.cs using Guid(acd5f56ad617a49458bb93f70586f691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb264886f15c60c1c38866c98a7c1372') in 0.030102 seconds
+  Import took 0.032649 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001125 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1234 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1742.
+Total: 2.385400 ms (FindLiveObjects: 0.177900 ms CreateObjectMapping: 0.039400 ms MarkObjects: 2.050400 ms  DeleteObjects: 0.116500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.843817 seconds.
+  path: Assets/Enemy/SearchPlayer.cs
+  artifactKey: Guid(bc683f9e5960da84f8bfbe3458152848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/SearchPlayer.cs using Guid(bc683f9e5960da84f8bfbe3458152848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420ad6a6d9cd1eef4c50f5f237a9cbd5') in 0.049562 seconds
+  Import took 0.073904 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001010 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1232 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1743.
+Total: 1.832400 ms (FindLiveObjects: 0.127800 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.556800 ms  DeleteObjects: 0.111000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.355865 seconds.
+  path: Assets/Enemy/SetPosition.cs
+  artifactKey: Guid(d949dc9e13f014a448643f7de95d537f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/SetPosition.cs using Guid(d949dc9e13f014a448643f7de95d537f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ca68f1eb565c5b4bb6ef88ba9f1844') in 0.029444 seconds
+  Import took 0.052698 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000970 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.952 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1745.
+Total: 1.830400 ms (FindLiveObjects: 0.141900 ms CreateObjectMapping: 0.042200 ms MarkObjects: 1.525900 ms  DeleteObjects: 0.119300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000870 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1239 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.5 MB.
+System memory in use after: 72.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1756.
+Total: 1.738100 ms (FindLiveObjects: 0.129600 ms CreateObjectMapping: 0.034300 ms MarkObjects: 1.452800 ms  DeleteObjects: 0.120400 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

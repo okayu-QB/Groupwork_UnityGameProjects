@@ -14,15 +14,18 @@ public class Enemy : MonoBehaviour
     //パトカーの移動速度
     public float speed;
     //目的地
+    [SerializeField]
     private Vector3 destination;
     //パトカーの速さ
-    private Vector3 velocity;
+    //private Vector3 velocity;
     //移動方向
     private Vector3 direction;
     //到着フラグ
-    private bool arrived;
+    public bool arrived;
     //SetPositionスクリプト
+    [SerializeField]
     private SetPosition setPosition;
+    public SetPosition setPos { get { return setPosition; } }
     //待ち時間
     public float waitTime = 5f;
     //　経過時間
@@ -30,7 +33,13 @@ public class Enemy : MonoBehaviour
     //プレイヤーのTransform
     private Transform playerTransform;
     //パトカーの状態
+    [SerializeField]
     private EnemyState state;
+    [SerializeField]
+    private Rigidbody rb;
+    public Rigidbody Rigid { get { return rb; } }
+
+    public bool LostEnemy;
 
     //パトカーの状態変更メソッド
     public void SetState(EnemyState tempState, Transform targetObj = null)
@@ -39,12 +48,27 @@ public class Enemy : MonoBehaviour
         {
             state = tempState;
         }
+        else if(tempState == EnemyState.Chase)
+        {
+            arrived = false;
+            playerTransform = targetObj;
+            state = tempState;
+        }
+        else if(tempState == EnemyState.Wait)
+        {
+            Debug.Log("wait");
+        }
+        Debug.Log("State has changed to" + tempState);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        setPosition.SetDestination(new Vector3(22.12f, 0, 44.59f));
+        rb.velocity = Vector3.zero;
+        arrived = false;
+        elapsedTime = 0f;
+        SetState(EnemyState.Patrol);
     }
 
     // Update is called once per frame
@@ -61,19 +85,25 @@ public class Enemy : MonoBehaviour
             if(state == EnemyState.Chase)
             {
                 setPosition.SetDestination(playerTransform.position);
-                direction = (setPosition.GetDestination() - transform.position).normalized;
-                transform.LookAt(new Vector3(setPosition.GetDestination().x, transform.position.y, setPosition.GetDestination().z));
-                velocity = direction * speed;
             }
+            else if(state == EnemyState.Patrol && LostEnemy == true)
+            {
+                setPosition.SetNearestWayPoint();
+                LostEnemy = false;
+            }
+            direction = (setPosition.GetDestination() - transform.position).normalized;
+            transform.LookAt(new Vector3(setPosition.GetDestination().x, transform.position.y, setPosition.GetDestination().z));
+            rb.velocity = direction * speed * Time.deltaTime;
 
             //　目的地に到着したかどうかの判定
-            if (Vector3.Distance(transform.position, setPosition.GetDestination()) < 0.5f)
+            if (Vector3.Distance(transform.position, setPosition.GetDestination()) < 0.1f)
             {
+                Debug.Log("arrived");
                 SetState(EnemyState.Wait);
-                //animator.SetFloat("Speed", 0.0f);
+                arrived = true;
             }
-            //　到着していたら一定時間待つ
         }
+        //　到着していたら一定時間待つ
         else if (state == EnemyState.Wait)
         {
             elapsedTime += Time.deltaTime;
@@ -81,10 +111,16 @@ public class Enemy : MonoBehaviour
             //　待ち時間を越えたら次の目的地を設定
             if (elapsedTime > waitTime)
             {
-                //SetState(EnemyState.Walk);
+                SetState(EnemyState.Patrol);
+                elapsedTime = 0f;
             }
         }
-        velocity.y += Physics.gravity.y * Time.deltaTime;
+        //velocity.y += Physics.gravity.y * Time.deltaTime;
         //enemyController.Move(velocity * Time.deltaTime);
+    }
+    //　敵キャラクターの状態取得メソッド
+    public EnemyState GetState()
+    {
+        return state;
     }
 }

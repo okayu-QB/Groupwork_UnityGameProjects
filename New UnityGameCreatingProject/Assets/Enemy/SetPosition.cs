@@ -8,12 +8,23 @@ public class SetPosition : MonoBehaviour
 	//初期位置
 	private Vector3 startPosition;
 	//目的地
+	[SerializeField]
 	private Vector3 destination;
+	//WayPointListの要素数
+	private int elements;
+	//目的地の座標
+	public float DestinationX;
+	public float DestinationZ;
+	//WayPointManagerのゲームオブジェクト
+	public WayPointManager WayPointManagerObj;
+
+	[SerializeField]
+	private GameObject NearrestWayPoint;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		//　初期位置を設定
+		//　初期位置を設定(コレのせいで巡回がおかしくなる可能性アリ)
 		startPosition = transform.position;
 		SetDestination(transform.position);
 	}
@@ -24,17 +35,51 @@ public class SetPosition : MonoBehaviour
         
     }
 
-	//　ランダムな位置の作成
-	//public void CreateRandomPosition()
-	//{
-	//	//　ランダムなVector2の値を得る
-	//	var randDestination = Random.insideUnitCircle * 8;
-	//	//　現在地にランダムな位置を足して目的地とする
-	//	SetDestination(startPosition + new Vector3(randDestination.x, 0, randDestination.y));
-	//}
+	//Enemyから一番近いWayPointを目的地に設定
+	public void SetNearestWayPoint()
+    {
+	    float tmpDis = 0;
+		float nearDis = 0;
+		GameObject cmpObj;
 
-	//　目的地を設定する
-	public void SetDestination(Vector3 position)
+		for(int i = 0;i < WayPointManagerObj.childrencount; i++)
+        {
+			cmpObj = WayPointManagerObj.AllWayPointList[i];
+			tmpDis = Vector3.Distance(transform.position, cmpObj.transform.position);
+
+			if(nearDis == 0 || nearDis > tmpDis)
+            {
+				nearDis = tmpDis;
+				NearrestWayPoint = cmpObj;
+				Debug.Log("NearestPoint is " + NearrestWayPoint);
+            }
+        }
+
+		SetDestination(NearrestWayPoint.transform.position);
+    }
+
+	//目的地のWayPointをランダムに設定
+	public void RandomSetWayPoint(List<Transform> list)
+	{
+		elements = list.Count;
+		//ランダムに0～3の間の整数を取る
+		int index = (int)(Time.realtimeSinceStartup % list.Count);
+		//Debug.Log("SetRange:" + index);
+		DestinationX = list[index].position.x;
+		DestinationZ = list[index].position.z;
+		//現在地に次の目的地を設定
+		//Debug.Log("x:" + DestinationX + " z:" + DestinationZ);
+		SetDestination(new Vector3(DestinationX, 0, DestinationZ));
+    }
+
+    //目的地を変更する
+    //public void ChangeDestination(WayPoint wayPoint)
+    //{
+    //    WayPointObj = wayPoint;
+    //}
+
+    //　目的地を設定する
+    public void SetDestination(Vector3 position)
 	{
 		destination = position;
 	}
