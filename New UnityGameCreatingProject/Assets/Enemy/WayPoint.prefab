@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7009135621219424558}
   - component: {fileID: 7009135621219424557}
   - component: {fileID: 7009135621219424556}
-  - component: {fileID: 2656190601710788280}
+  - component: {fileID: 5019203325179417381}
+  - component: {fileID: 6906616171487817679}
   m_Layer: 0
   m_Name: WayPointCheck
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7009135621219424554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 7009135622498330202}
   m_RootOrder: 0
@@ -92,11 +93,11 @@ SphereCollider:
   m_GameObject: {fileID: 7009135621219424554}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2656190601710788280
+--- !u!114 &5019203325179417381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +106,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 7009135621219424554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e060c987e5adc4583e253987cc1dad, type: 3}
+  m_Script: {fileID: 11500000, guid: f75daea7ea9b9e647aad5dbe1574623e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoint: {fileID: 0}
+  waypoint: {fileID: 8533567773338534406}
   Police: {fileID: 0}
+--- !u!136 &6906616171487817679
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7009135621219424554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7009135622498330201
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7009135622498330202}
-  - component: {fileID: 1853960873760773269}
+  - component: {fileID: 8533567773338534406}
   m_Layer: 0
   m_Name: WayPoint
   m_TagString: Untagged
@@ -142,7 +157,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1853960873760773269
+--- !u!114 &8533567773338534406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7009135622498330201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c9fea52c4dc5d54a941838e87051e76, type: 3}
+  m_Script: {fileID: 11500000, guid: f86138c745382904a811b0552bc35876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NorthPoint: {fileID: 0}
