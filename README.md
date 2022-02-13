@@ -3,6 +3,8 @@
 動物園を飛び出したパンダが買い物カートに乗り、マップ内を巡回するパトカーを避けながらカラーアイテムをゲットしていくゲームです。
 
 # ダウンロード
+以下のURLからダウンロードが可能です。
+[https://drive.google.com/drive/folders/12oHnzL5dp-eHMsq7hX2SfWpgiDRHQH6D?usp=sharing](https://drive.google.com/drive/folders/12oHnzL5dp-eHMsq7hX2SfWpgiDRHQH6D?usp=sharing)
 
 # 起動方法
 Windows:色づく世界.exeを実行することでゲームを起動します。<br>
@@ -48,3 +50,10 @@ Bのアイテムの取得数がその他のアイテムの合計より3つ以上
 
 ![screen2](/images/screen_update.png)<br>
 アイテムを最大数まで取得すると、各アイテムに対応した色が画面上に反映されます。
+
+# ライセンス
+この作品の製作には、下記の素材を使用させていただきました。
+#### 音楽
+魔王魂 [https://maou.audio/](https://maou.audio/)
+#### 3Dモデル
+ZENRIN City Asset Series™ [https://www.zenrin.co.jp/contents/product/service/3d/asset/index.html](https://www.zenrin.co.jp/contents/product/service/3d/asset/index.html)
