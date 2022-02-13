@@ -55,4 +55,5 @@ Bのアイテムの取得数がその他のアイテムの合計より3つ以上
 #### 音楽
 魔王魂 [https://maou.audio/](https://maou.audio/)
 #### 3Dモデル
-ZENRIN City Asset Series™ [https://www.zenrin.co.jp/contents/product/service/3d/asset/index.html](https://www.zenrin.co.jp/contents/product/service/3d/asset/index.html)
+ZENRIN City Asset Series™ [https://www.zenrin.co.jp/contents/product/service/3d/asset/index.html](https://www.zenrin.co.jp/contents/product/service/3d/asset/index.html)<br>
+Low Poly Police Car Pack [https://assetstore.unity.com/packages/3d/vehicles/land/low-poly-police-car-pack-59458](https://assetstore.unity.com/packages/3d/vehicles/land/low-poly-police-car-pack-59458)
