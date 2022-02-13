@@ -3,7 +3,7 @@
 動物園を飛び出したパンダが買い物カートに乗り、マップ内を巡回するパトカーを避けながらカラーアイテムをゲットしていくゲームです。
 
 # ダウンロード
-以下のURLからダウンロードが可能です。
+以下のURLからダウンロードが可能です。<br>
 [https://drive.google.com/drive/folders/12oHnzL5dp-eHMsq7hX2SfWpgiDRHQH6D?usp=sharing](https://drive.google.com/drive/folders/12oHnzL5dp-eHMsq7hX2SfWpgiDRHQH6D?usp=sharing)
 
 # 起動方法
